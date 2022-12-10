@@ -1,0 +1,24 @@
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.texto-debajo{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.texto-color{
+    text-decoration: none;
+    color: #003580;
+}
+@media (max-width:800px) {
+    .contenedor img{
+        height: 250px;
+    }
+}

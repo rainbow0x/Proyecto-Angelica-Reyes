@@ -1,0 +1,38 @@
+.grid{
+    display: grid;
+    padding: 10px;
+    grid-template-areas: "imagen infogeneral disponibilidad";
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+.infogeneral{
+    grid-area: infogeneral;
+}
+
+.infogeneral a{
+    text-decoration: none;
+}
+
+.disponibilidad{
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-area: disponibilidad;
+}
+
+@media (max-width:800px){
+    .grid{
+        grid-template-areas: "imagen" "infogeneral" "disponibilidad";
+    }
+
+    .disponibilidad{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imagen{
+        text-align: center;
+    }
+}
